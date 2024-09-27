@@ -44,6 +44,7 @@ const provinceNames: { [key: string]: string } = {
   '132': 'Paktika',
 };
 
+// Simulated function to generate weather data
 const getWeatherData = (): Weather => {
   const temp = Math.floor(Math.random() * (35 - 10 + 1)) + 10;
   const humidity = Math.floor(Math.random() * (100 - 30 + 1)) + 30;
@@ -62,17 +63,24 @@ const getWeatherData = (): Weather => {
   return { temp, humidity, ...condition };
 };
 
+// Fetch weather data function
 async function fetchWeather(id: string): Promise<Weather | null> {
-  return Math.random() > 0.5 ? getWeatherData() : null;
+  return getWeatherData(); // Always return simulated weather data
 }
 
 export default async function WeatherPage({ params }: { params: { id: string } }) {
   const { id } = params;
 
-  const weather: Weather | null = await fetchWeather(id).catch(() => {
+  console.log("Fetching weather for ID:", id); // Debugging log
+
+  // Fetch weather data
+  const weather: Weather | null = await fetchWeather(id).catch((error) => {
+    console.error("Error fetching weather data:", error);
     notFound();
     return null;
   });
+
+  console.log("Weather data:", weather); // Debugging log
 
   if (!weather) {
     return <div>Error: Weather data not found.</div>;
