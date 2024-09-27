@@ -2,11 +2,13 @@
 
 ## Project Description 📝
 
-🌟 **Advanced Next.js App** is a dynamic and interactive website built using **Next.js**, **TypeScript**, and **Tailwind CSS**. This portfolio showcases my skills, experiences, and projects to potential employers or clients. It is designed for high customization and interactivity. 💻✨
+🌟 
+The Advanced Next.js App is an interactive, single-page app application designed to showcase your skills, projects, and experiences in a visually appealing manner. Built with modern web technologies, this application leverages the power of Next.js, TypeScript, and Tailwind CSS to provide a seamless user experience and high performance.. 💻✨
 
 ## Demo 📸
 
-![Screenshot (208)](https://github.com/user-attachments/assets/cc3e61ea-10c3-4140-9afc-2bdc73844153)
+![Screenshot (212)](https://github.com/user-attachments/assets/efb5eacc-bb29-4fc2-8d31-543d22de9a3d)
+
 
 **Live Demo**: [https://next-js-simple-portfolio-31n2m1wan-zainab-behzads-projects.vercel.app] 🌐
 
