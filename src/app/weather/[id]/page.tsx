@@ -79,10 +79,15 @@ export default async function WeatherPage({ params }: { params: { id: string } }
   });
 
   if (!weather) {
+    console.error("Weather data not found for ID:", id);
     return <div>Error: Weather data not found.</div>;
   }
 
   const provinceName = provinceNames[id] || 'Unknown Province';
+
+  // Log the icon being used
+  console.log("Weather icon:", weather.icon);
+  console.log("Weather icon URL:", `https://openweathermap.org/img/wn/${weather.icon}@2x.png`);
 
   return (
     <div className="max-w-3xl mx-auto py-10 px-6">
