@@ -3,17 +3,17 @@
 @tailwind utilities;
 
 :root {
-  --background: #f0f4f8; /* Light background for a clean look */
-  --foreground: #333333; /* Darker text for better readability */
-  --navyBlue: #001f3f; /* Navy blue for headers and accents */
-  --lightBlue: #3c92f2; /* Light blue for highlights */
+  --background: #f0f4f8;
+  --foreground: #333333;
+  --navyBlue: #001f3f;
+  --lightBlue: #3c92f2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1e1e2f; /* Dark background for dark mode */
-    --foreground: #ffffff; /* Light text for contrast */
-    --navyBlue: #ffffff; /* Change navy blue to white for visibility in dark mode */
+    --background: #1e1e2f;
+    --foreground: #ffffff;
+    --navyBlue: #ffffff;
   }
 }
 
@@ -21,11 +21,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'Arial', 'Helvetica', sans-serif;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme changes */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 h1, h2, h3 {
-  color: var(--navyBlue); /* Use navy blue for headings */
+  color: var(--navyBlue);
 }
 
 @layer components {
@@ -47,7 +47,6 @@ h1, h2, h3 {
     text-wrap: balance;
   }
 
-  /* Additional utility classes */
   .bg-lightBlue {
     background-color: var(--lightBlue);
   }
@@ -60,7 +59,6 @@ h1, h2, h3 {
     transition: color 0.3s ease, background-color 0.3s ease;
   }
 
-  /* Custom utilities for weather app */
   .weather-card {
     @apply p-6;
   }

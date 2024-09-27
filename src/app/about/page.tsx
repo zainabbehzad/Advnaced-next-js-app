@@ -1,4 +1,4 @@
-import Image from 'next/image'; // Import the Image component from next/image
+import Image from 'next/image';
 
 export default function AboutPage() {
   return (
@@ -37,13 +37,12 @@ export default function AboutPage() {
         We plan to add more features, including user accounts, personalized weather alerts, and additional geographical data.
       </p>
   
-      {/* Using the Image component instead of img */}
       <div className="mt-8 text-center">
         <Image
           src="/images/R.jpeg"
           alt="Weather Dashboard"
-          width={800} // Specify the width
-          height={500} // Specify the height
+          width={800}
+          height={500}
           className="mx-auto rounded-lg shadow-md"
         />
       </div>

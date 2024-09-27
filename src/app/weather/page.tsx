@@ -1,38 +1,38 @@
 import Link from 'next/link';
 
 const provinces = [
-  { id: '101', name: 'Kabul' },           // Kabul Province
-  { id: '102', name: 'Herat' },           // Herat Province
-  { id: '103', name: 'Kandahar' },        // Kandahar Province
-  { id: '104', name: 'Balkh' },           // Balkh Province
-  { id: '105', name: 'Nangarhar' },       // Nangarhar Province
-  { id: '106', name: 'Laghman' },         // Laghman Province
-  { id: '107', name: 'Logar' },           // Logar Province
-  { id: '108', name: 'Paktia' },          // Paktia Province
-  { id: '109', name: 'Ghor' },            // Ghor Province
-  { id: '110', name: 'Badakhshan' },      // Badakhshan Province
-  { id: '111', name: 'Samangan' },        // Samangan Province
-  { id: '112', name: 'Takhar' },          // Takhar Province
-  { id: '113', name: 'Bamyan' },          // Bamyan Province
-  { id: '114', name: 'Parwan' },          // Parwan Province
-  { id: '115', name: 'Kunar' },           // Kunar Province
-  { id: '116', name: 'Nuristan' },        // Nuristan Province
-  { id: '117', name: 'Panjshir' },        // Panjshir Province
-  { id: '118', name: 'Zabul' },           // Zabul Province
-  { id: '119', name: 'Urozgan' },         // Urozgan Province
-  { id: '120', name: 'Daykundi' },        // Daykundi Province
-  { id: '121', name: 'Jowzjan' },         // Jowzjan Province
-  { id: '122', name: 'Faryab' },          // Faryab Province
-  { id: '123', name: 'Sar-e Pol' },       // Sar-e Pol Province
-  { id: '124', name: 'Badghis' },         // Badghis Province
-  { id: '125', name: 'Ghazni' },          // Ghazni Province
-  { id: '126', name: 'Wardak' },          // Wardak Province
-  { id: '127', name: 'Khost' },           // Khost Province
-  { id: '128', name: 'Nimroz' },          // Nimroz Province
-  { id: '129', name: 'Helmand' },         // Helmand Province
-  { id: '130', name: 'Farah' },           // Farah Province
-  { id: '131', name: 'Kapisa' },          // Kapisa Province
-  { id: '132', name: 'Paktika' },         // Paktika Province
+  { id: '101', name: 'Kabul' },
+  { id: '102', name: 'Herat' },
+  { id: '103', name: 'Kandahar' },
+  { id: '104', name: 'Balkh' },
+  { id: '105', name: 'Nangarhar' },
+  { id: '106', name: 'Laghman' },
+  { id: '107', name: 'Logar' },
+  { id: '108', name: 'Paktia' },
+  { id: '109', name: 'Ghor' },
+  { id: '110', name: 'Badakhshan' },
+  { id: '111', name: 'Samangan' },
+  { id: '112', name: 'Takhar' },
+  { id: '113', name: 'Bamyan' },
+  { id: '114', name: 'Parwan' },
+  { id: '115', name: 'Kunar' },
+  { id: '116', name: 'Nuristan' },
+  { id: '117', name: 'Panjshir' },
+  { id: '118', name: 'Zabul' },
+  { id: '119', name: 'Urozgan' },
+  { id: '120', name: 'Daykundi' },
+  { id: '121', name: 'Jowzjan' },
+  { id: '122', name: 'Faryab' },
+  { id: '123', name: 'Sar-e Pol' },
+  { id: '124', name: 'Badghis' },
+  { id: '125', name: 'Ghazni' },
+  { id: '126', name: 'Wardak' },
+  { id: '127', name: 'Khost' },
+  { id: '128', name: 'Nimroz' },
+  { id: '129', name: 'Helmand' },
+  { id: '130', name: 'Farah' },
+  { id: '131', name: 'Kapisa' },
+  { id: '132', name: 'Paktika' },
 ];
 
 export default function WeatherDashboard() {

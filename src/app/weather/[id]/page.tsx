@@ -1,8 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound } from 'next/navigation'; // Import notFound from Next.js
+import { notFound } from 'next/navigation';
 
-// Define the Weather type
 type Weather = {
   temp: number;
   humidity: number;
@@ -10,7 +9,6 @@ type Weather = {
   icon: string;
 };
 
-// Mapping of all 34 provinces of Afghanistan
 const provinceNames: { [key: string]: string } = {
   '101': 'Kabul',
   '102': 'Herat',
@@ -47,8 +45,8 @@ const provinceNames: { [key: string]: string } = {
 };
 
 const getWeatherData = (): Weather => {
-  const temp = Math.floor(Math.random() * (35 - 10 + 1)) + 10; // Random temperature between 10-35°C
-  const humidity = Math.floor(Math.random() * (100 - 30 + 1)) + 30; // Random humidity between 30-100%
+  const temp = Math.floor(Math.random() * (35 - 10 + 1)) + 10;
+  const humidity = Math.floor(Math.random() * (100 - 30 + 1)) + 30;
   const conditions = [
     { description: "clear sky", icon: "01d" },
     { description: "partly cloudy", icon: "02d" },
@@ -64,23 +62,20 @@ const getWeatherData = (): Weather => {
   return { temp, humidity, ...condition };
 };
 
-// Define the fetchWeather function
 async function fetchWeather(id: string): Promise<Weather | null> {
-  // Simulate fetching weather data; replace with actual fetch logic
-  return Math.random() > 0.5 ? getWeatherData() : null; // Simulate a possible null return
+  return Math.random() > 0.5 ? getWeatherData() : null;
 }
 
 export default async function WeatherPage({ params }: { params: { id: string } }) {
-  const { id } = params; // eslint-disable-line @typescript-eslint/no-unused-vars
+  const { id } = params;
 
   const weather: Weather | null = await fetchWeather(id).catch(() => {
-    notFound(); // Redirect to 404 page if the city is not found
-    return null; // This return is just for TypeScript
+    notFound();
+    return null;
   });
 
-  // Handle null case
   if (!weather) {
-    return <div>Error: Weather data not found.</div>; // Handle null case
+    return <div>Error: Weather data not found.</div>;
   }
 
   const provinceName = provinceNames[id] || 'Unknown Province';

@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Import Font Awesome CSS
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 
 const geistSans = localFont({
@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Weather Dashboard", // Updated title
-  description: "Stay updated with the latest weather information.", // Updated description
+  title: "Weather Dashboard",
+  description: "Stay updated with the latest weather information.",
 };
 
 export default function RootLayout({
@@ -27,7 +27,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Prevent auto-adding CSS
   config.autoAddCss = false;
 
   return (
