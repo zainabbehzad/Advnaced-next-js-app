@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Advanced Next.js App 🚀
 
-## Getting Started
+## Project Description 📝
 
-First, run the development server:
+🌟 **Advanced Next.js App** is a dynamic and interactive website built using **Next.js**, **TypeScript**, and **Tailwind CSS**. This portfolio showcases my skills, experiences, and projects to potential employers or clients. It is designed for high customization and interactivity. 💻✨
 
-```bash
-npm run dev
+## Demo 📸
+
+![Screenshot (208)](https://github.com/user-attachments/assets/cc3e61ea-10c3-4140-9afc-2bdc73844153)
+
+**Live Demo**: [https://next-js-simple-portfolio-31n2m1wan-zainab-behzads-projects.vercel.app] 🌐
+
+## Features 🎉
+
+- **Homepage**: Welcoming hero section with a brief introduction.
+- **About Page**: Information about myself and my background.
+- **Weather Page**: Showcase of my projects with links to live demos and source code.
+- **Contact Page**: A contact form for potential clients and employers to reach out. 📬
+
+## Technologies and Tools Used 🛠️
+
+- **Next.js**
+- **TypeScript**
+- **Tailwind CSS**
+- **Git**
+- **GitHub**
+
+## Installation 💻
+
+To install and set up this project, follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/zainabbehzad/advnaced-next-js-app.git
+
+
+   cd advanced-next-js-app
+
+
+Install dependencies:
+
+bash
+
+Copy
+
+
+    npm install
+
 # or
-yarn dev
+
+    yarn install
+
+
+Usage 🎯
+
+
+To use this project, follow these steps:
+
+Run the development server:
+bash
+
+Copy
+
+    npm run dev
+    
 # or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    yarn dev
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open your browser and navigate to http://localhost:3000 to see your app in action! 🚀
+Customize: Feel free to edit the content in the pages directory and modify styles in styles to make it your own.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+#Author 👩‍💻
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Zainab Behzad
 
-## Deploy on Vercel
+-LinkedIn: [Zainab Behzad]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+-GitHub:[zainabbehzad]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-Email:[zainabbehzad03@gmail.com]
+
+
+#Contributing 🤝
+
+
+If you'd like to contribute to this project, please follow these steps:
+
+1-Fork the repository: Fork the repository to your own GitHub account.
+
+2-Clone the repository: Clone the repository to your local machine.
+bash
+
+Copy
+git clone
+
+    https://github.com/zainabbehzad/advnaced-next-js-app.git
+
+    
+3-Create a new branch: Create a new branch for your feature or bug fix.
+bash
+
+Copy
+
+    git checkout -b feature/new-feature
+    
+4-Make your changes: Implement your changes in your local environment.
+
+5-Commit your changes: Commit your changes with a descriptive message.
+bash
+
+Copy
+
+    git commit -m 'Add new feature'
+
+    
+6-Push your changes: Push your changes to your forked repository.
+bash
+
+Copy
+
+    git push origin feature/new-feature
+
+
+7-Submit a pull request: Go to the original repository and submit a pull request with your changes.
