@@ -16,26 +16,24 @@ interface Weather {
 }
 
 // Fetch weather data for a specific city
-const fetchWeather = async (id: string): Promise<Weather> => {
+const fetchWeather = async (id: string): Promise<Weather | null> => {
   const apiKey = process.env.WEATHER_API_KEY; // Your weather API key
   const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=${apiKey}&units=metric`, {
     cache: 'no-store',
   });
 
   if (!res.ok) {
-    throw new Error('City not found');
+    return null; // Return null if city is not found
   }
 
   return res.json();
 };
 
 export default async function WeatherPage({ params }: { params: { id: string } }) {
-  const weather: Weather = await fetchWeather(params.id).catch(() => {
-    notFound(); // Redirect to 404 page if the city is not found
-    return null; // This return is just for TypeScript
-  });
+  const weather = await fetchWeather(params.id);
 
   if (!weather) {
+    notFound(); // Redirect to 404 page if the city is not found
     return null; // Prevent rendering if weather is null
   }
 
