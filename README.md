@@ -10,7 +10,7 @@ The Advanced Next.js App is an interactive, single-page app application designed
 ![Screenshot (212)](https://github.com/user-attachments/assets/efb5eacc-bb29-4fc2-8d31-543d22de9a3d)
 
 
-**Live Demo**: [https://next-js-simple-portfolio-31n2m1wan-zainab-behzads-projects.vercel.app] 🌐
+**Live Demo**: [https://advnaced-next-js-ijnvh57ff-zainab-behzads-projects.vercel.app] 🌐
 
 ## Features 🎉
 
