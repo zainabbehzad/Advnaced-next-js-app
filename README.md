@@ -28,51 +28,44 @@ The Advanced Next.js App is an interactive, single-page app application designed
 - **Git**
 - **GitHub**
 
-## Installation 💻
-
+Installation 💻
 To install and set up this project, follow these steps:
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/zainabbehzad/advnaced-next-js-app.git
-
-
-   cd advanced-next-js-app
-
-
-Install dependencies:
-
+Clone the repository:
 bash
 
 Copy
+git clone https://github.com/zainabbehzad/advnaced-next-js-app.git
+Change into the project directory:
+bash
 
+Copy
+cd advnaced-next-js-app
+Install dependencies:
+bash
 
-    npm install
+Copy
+npm install
+or
+bash
 
-# or
-
-    yarn install
-
-
+Copy
+yarn install
 Usage 🎯
-
-
 To use this project, follow these steps:
 
 Run the development server:
 bash
 
 Copy
+npm run dev
+or
+bash
 
-    npm run dev
-    
-# or
-
-    yarn dev
-
-
+Copy
+yarn dev
 Open your browser and navigate to http://localhost:3000 to see your app in action! 🚀
-Customize: Feel free to edit the content in the pages directory and modify styles in styles to make it your own.
+Customize: Feel free to edit the content in the pages directory and modify styles to make it your own.
 
 
 #Author 👩‍💻
