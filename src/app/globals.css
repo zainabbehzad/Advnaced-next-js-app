@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f0f4f8;
+  --foreground: #333333;
+  --navyBlue: #001f3f;
+  --lightBlue: #3c92f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1e1e2f;
+    --foreground: #ffffff;
+    --navyBlue: #ffffff;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3 {
+  color: var(--navyBlue);
+}
+
+@layer components {
+  .weather-card {
+    @apply bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg overflow-hidden transition-transform transform hover:scale-105;
+  }
+
+  .weather-icon {
+    @apply object-cover mb-4;
+  }
+
+  .loading-message {
+    @apply text-center py-10 text-lg text-gray-500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .bg-lightBlue {
+    background-color: var(--lightBlue);
+  }
+
+  .text-navyBlue {
+    color: var(--navyBlue);
+  }
+
+  .transition-colors {
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .weather-card {
+    @apply p-6;
+  }
+
+  .text-temperature {
+    @apply text-2xl font-semibold;
+  }
+
+  .text-condition {
+    @apply text-gray-700;
+  }
+}
